@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function getChicken(){
+        return new Promise(function(resolve,reject){
+            setTimeout(function(){
+                console.log('Chicken');
+                resolve(getEgg);//이때는 get Egg 를 참조만 함. 
+            },1500);
+        });
+    }
+
+    function getEgg(){
+        return new Promise(function(resolve, reject){
+            setTimeout(function(){},1000)
+            console.log('Chicken>Egg');
+        })
+    }
+
+    const bb = getChicken();
+    bb
+    .then(function(data){
+       return data();
+        //egg 안에 있는 promise 객체를 참조할 수 있음.
+        // bb 전체가 promise 객체가 되어 then을 사용할 수 있음 
+    }).then(function(){
+        console.log('Eggs 끝!')
+    })
+    .catch();
+</script>
+</html>

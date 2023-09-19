@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <input type="number" id="n1" value="std1@naver.com" >
+        <input type="number" id="n2">
+            <button id="plus_btn">++</button>
+            <span id="result"></span>
+    </div>
+    <div id="result"></div>
+</body>
+    <script>
+        const $n1 = document.getElementById('n1');
+        const $n2 = document.querySelector('#n2');
+
+        const $divResult = document.querySelector('#result');
+        const $plusBtn = document.querySelector('#plus_btn');
+        // $plusBtn.addEventListener('click', function(){
+            
+        //     const n1Val=$n1.value;
+        //     console.log(`n1Val:`,n1Val);
+        //     const n2Val=$n2.value;
+        //     console.log(`n2Val : `,n2Val);
+            
+        //     const result = n1Val+n2Val;
+        //     console.log(`result :`,result);
+            
+        //     const div=document.createElement('div');
+        //     div.innerText = result;
+           
+        //     $divResult.append(`<div>${result}</div>`)
+        //     $divResult.prepend(`<div>${result}</div>`)
+        // });
+
+        $plusBtn.addEventListener('click', function(){
+            const n1Val=$n1.value;
+            console.log(`n1Val:`,n1Val);
+            const n2Val=$n2.value;
+            console.log(`n2Val : `,n2Val);
+            
+            const result = parseInt(n1Val)+parseInt(n2Val);
+            alert(`result : ${result}` );
+            const div = document.createElement('div');
+            div.innerText = result;
+            $divResult.prepend(div);
+        });
+
+        
+
+        
+        console.log($n1);
+        console.log($n2);
+   
+    </script>
+</html>

@@ -1,0 +1,13 @@
+body{background-color: darkblue;}
+#container{display:flex; flex-direction:row ;width:300px ; height:300px; background-color:coral;
+     justify-content:space-evenly;
+     /* space between/space-evenly / 공간을 분할할때 비트윈은 양 가장자리에 먼저 배치후 나머지 공간을 균일하게 분할
+     even 으로 바꾼다면 공간자체만 분할 */
+    align-items:center;
+    }
+div{color: tan; font-weight: bolder; border:3px solid bisque; width:30px;}
+#container div{background-color: blanchedalmond; text-align: center;}
+#container div:first-of-type{color: teal}
+#container div:nth-child(2){color:rgb(44, 173, 206) !important;}
+/* 컨테이너 안에있는 div태그를 가진 - n번째 자식에게 더 디테일하게 색상지정을 해준다 */
+/* 기존에 있는 우선순위보다 상위로 만들기위해  !important를 줄 수 있음 와일드카드?같은넊낌 */

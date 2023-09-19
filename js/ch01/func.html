@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //ES5
+    function sum(n1,n2){//따로 타입을 명시해주지 않고 사용할 이름만 선언함.
+        return n1+n2;
+    }
+    console.log('10+20 = ',sum(10,20));
+    console.log('정의된 숫자 갯수 보다 많은 수의 숫자를 보낸다면 ?10+20 = ',sum(10,20,30,40));
+    //여러 개를 보내도 에러가 나진않고 값이 산출되지않을뿐임.
+    console.log(`숫자를 하나만 보내면? : 10+20 = `, sum(10) )
+    function printSum(n1,n2){
+        console.log(`${n1}+${n2}+${n1+n2}`)
+    }
+    const a = printSum(10,20);
+    console.log(a);
+    
+
+</script>
+</html>

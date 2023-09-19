@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Cascade Style Sheets
+        어떤속성은 상속이 되지만 어떤속성은 안됨..
+        일단 색상은 가능 
+
+        선택자가 필요함니다.{ css 속성들 }
+        1. 태그 선택자
+        2. 클래스 선택자
+        3. 아이디 선택자
+         */
+        *{padding:0; margin: 0; box-sizing: border-box;}
+        /* p태그와 h1 태그같은 경우는 기본적으로 마진 값을 갖고있는 경우가 있음
+        이를 0으로 재설정 하고 디자인을 시작하는 부분.
+        안드로이드 같은경우는 dp(Density independent pixl), sp(scale independent pixel)
+        처럼 비율free 개념을 사용한다 */
+         span{color : red;}
+         .bb{font-weight : bold; color : darkblue;}
+         .cc{font-style: italic;}
+         #uniqueid{font-size: 100px;}
+    </style>
+</head>
+<body>
+    <span>nice to meet you</span>
+    <span>was nice to meet U</span></br>
+    <span class ="bb cc">SEE U TMR</span>
+    <span class="cc">XOXO</span>
+    <span id="uniqueid">XOXO</span>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        table{border-collapse : collapse;}
+        /* 경계선을 합치는 명령어 */
+        table, th, td{border: 1px solid rgb(121, 55, 245)}
+    </style>
+</head>
+<body>
+    <table>
+        <caption class="test1"><i>A test tabke with merged cells</i></caption>
+        <thead>
+            <tr>
+            <th rowspan="2" > </th>
+            <th colspan="2"class="test2">Average</th>
+            <th rowspan="2"class="test2">Red eyes</th>
+            </tr>
+            <tr>            
+                <th class="test2">height</th>
+                <th class="test2">weight</th>
+                </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Fales</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

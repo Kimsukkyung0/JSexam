@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>로그인, 회원가입</h1>
+    <form action="/api/login" method="get">
+            <div><label>이름 : <input type="text" name="name value="test value"></label></div>
+            <div><label for="input-age">나이 : </label></div>
+            <div><input type="number" name="age" id = "input-age"></div>
+            <div>키 : <input type="range" name="height"></div>
+            <div>취미 :
+                <label>노동<input type="checkbox" value="1" name="hobby"></label>
+                <label>축구<input type="checkbox" value="2" name="hobby"></label>
+                <label>게임<input type="checkbox" value="3" name="hobby"></label></div>
+                <label>기타헛짓<input type="checkbox" value="4" name="hobby"></label>
+            <div><input type = "reset" value = "reset"></div>
+            <div>
+                성별:
+                <label>여자<input type="radio" value="1" name="gender" checked></label>
+                <label>남자<input type="radio" value="2" name="gender"></label>
+            </div>
+            <div>
+                지역:
+                <select name="region">
+                    <option>--선택--</option>
+                    <option value="1">서울</option>
+                    <option value="2" selected>대구</option>
+                    <option value="3">부산</option>
+                    <option value="4">경기</option>
+                </select>
+            </div>
+            <div>
+                남길말 : 
+                <textarea name="comment" placeholder="히히"></textarea>
+            </div>
+            
+            <div><input type = "submit" value = "submit"></div>
+    </form>
+    <!-- 폼태그의 장점은, 자바스크립트의 도움없이 데이터를 주고받을 수 있다는 (GET/POST) 
+    처음에 데이터 제이슨 하기전에 ? 했던건가 ? -->
+    <!-- A tag = get -->
+    <!-- 속성명에는 소문자만! -->
+    <!-- 쿼리스트링 방식으로 데이터가 날아간댜! -->
+</body>
+</html>

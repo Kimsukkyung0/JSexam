@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+<script>
+    const $divContainer = document.querySelector('.container');
+    //컨테이너가 가진 값을 하나씩 가져온다는 얘깁니다유
+    //컨테이너가 여러개 있더라도, 가장 먼저 만나는 , 상위에 있는 컨테이너클래스만 가져오게 됨 
+    // const $divContainer = document.querySelectorAll('.container')[0];
+    //기괴한 형태긴한데 암튼 All 을 쓰고 0번째 만나는 컨테이너 이름의 뭔가를 쓰겟다는것
+    // const arr = document.querySelectorAll('.container');
+    //배열 : 여기서 자바와 다른점 const 로 단수/복수(배열)까지 만들 수 있음.
+    //document.getElementsByClassName('container')
+
+    fetch('https://picsum.photos/v2/list')
+    .then(function(res){
+        return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+        if(data.length>0){
+            makeList(data);
+        }
+    })
+    .catch(function(data){
+        console.log('ddd');
+        console.error(data);
+    });
+
+    function makeList(data){
+        data.forEach(function(item){
+            var ratioToReduce = 0.1;
+            item.height=item.height*ratioToReduce;
+            item.width=item.width*ratioToReduce;
+            const img = makeItem(item);
+            img.height=item.height;
+            img.width=item.width;
+            $divContainer.append(img);
+           
+        })
+        
+    }
+    
+    function makeItem(item){
+        const img = document.createElement('img');
+       
+        img.src = item.download_url;
+        img.alt = item.author;
+        return img;
+    }
+    
+
+</script>
+</html>

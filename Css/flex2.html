@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#container{width:300px; height:300px;  display: flex; flex-direction:column; 
+            align-items:flex-end; justify-content:spa;}
+        div{border:4px solid darkblue;}
+        div#container > div{width:100px; height:100px; background-color: blueviolet; text-align: center;}
+        /* 1차 자식에게만 해당되는 속성 적용 가능 */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            A
+        </div>
+    </div>
+
+</body>
+</html>
