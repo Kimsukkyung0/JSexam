@@ -1,15 +1,14 @@
 * {margin : 0; padding:0; list-style:none; box-sizing: border-box;}
-
-body{background-color: rgb(247, 252, 238)}
 .pointer{cursor: pointer;}
+body{background-color: rgb(247, 252, 238)}
 .wrap { display : grid; 
     grid-template-columns: 200px minmax(420px,1fr); 
     grid-template-rows: 56px,1fr;}
 .header{background-color: rgb(223, 215, 173); grid-row: span 2; min-height : 100vh; color:#fff;}
 .header .logo{margin:40px 0 50px; font-size:27px; text-align: center; font-family: Shrikhand , cursive;}
 .header .nav__container{margin-bottom: 40px;}
-.header .nav__title{display:block; font-size:90%; background-color:rgb(148, 168, 168); padding : 8px 20px; margin-bottom:12px;}
-.header .nav__list{display:block; color: darkorange; font-size: 16px; padding: 0px 20px; background-color: darkgray; padding : 8px 20px; }
+.header .nav__title{display:block; font-size:80%; background-color:rgb(148, 168, 168); padding : 8px 20px; margin-bottom:12px;}
+.header .nav__list{ color: darkorange; padding: 0 20px;}
 .header .nav__item {margin-bottom : 10px;}
 .header .nav__link{color:#fff; text-decoration:overline;}
 
@@ -30,7 +29,7 @@ body{background-color: rgb(247, 252, 238)}
 .main .listing-card{max-width:1600px; margin:30px auto 60px; padding:0 20px;}
 .main .listing-card__list{display: grid; grid-template-columns:repeat(autofill, minmax(300px,1fr));}
 .main .listing-card__item{width:100%; background-color: #fff; border:1px solid wheat; padding:20px}
-.main .listing-card__image{padding-top:70%; background-size: cover; background-repeat: no;}
+.main .listing-card__image{padding-top:150%; background-size: cover; background-repeat: no;}
 .main .listing-card__info{margin:20px 0 10px;}
 .main .listing-card__name{font-size:18px;}
 .main .listing-card__date{color : #333; margin-top:6px;}

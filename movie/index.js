@@ -13,18 +13,33 @@
         });
         const data = await res.json();
         console.log(data);
-        if(data.length>0){
-        makeList(data);
+        if(data.results.length>0){
+        makeList(data.results);
         }
     }
     getMovieData();
+
+    const $listingCardList = document.querySelector('.listing-card__list');
     function makeList(data){
-        data.array.forEach(function(item) {
-            const li = document.createElement('li');
-            li.classList.add('listing-card__item');
-            li.className = 'listing-card__item';
-            
-            return li;
+        data.forEach(function(item) {
+           const li = makeItem(item);
+           $listingCardList.append(li);
         });
+    }
+  
+    function makeItem(item){
+        const li=document.createElement('li');
+        const imgUrl = posterPrefix+item.poster_path;
+        const cardName=item.original_title;
+        const cardDate = item.release_date;
+        li.classList.add('listing-card__item');
+        li.className = 'listing-card__item';
+        li.innerHTML =` <div class="listing-card__image" style="background-image:url('${imgUrl}')"></div>
+        <div class="listing-card__info">
+       <strong class="listing-card__name"> ${cardName}</strong>
+       <p class="listing-card__date">${cardDate}</p>
+        </div>
+        `;
+        return li;
     }
 })();
