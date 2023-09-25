@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alertexam</title>
+    <link rel="stylesheet" href="exam02.css">
+</head>
+<body>
+    <div class="alert-box">Alert BOX
+
+        <button onclick="closeAlert()" id="closeBtn">닫기</button>
+    </div>
+    <button onclick="onClick()" id="openBtn">버튼</button>
+</body>
+
+<script>
+    const onClick = function(){
+        const alertBox = document.querySelector(".alert-box");
+        alertBox.classList.add("show-alert-box");
+
+    }
+
+    const closeAlert = function(){
+        const alertBox = document.querySelector(".alert-box");
+        alertBox.classList.remove("show-alert-box");
+        console.log("닫기")
+    }
+
+    document.querySelector('#openBtn').addEventListener('click',onClick);
+    document.querySelector('#closeBtn').addEventListener('click',closeAlert);
+</script>
+</html>
