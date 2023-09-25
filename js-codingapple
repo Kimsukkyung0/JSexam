@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id='hello'>안녕하시온지?</h2>    
+    <h2 id='hi' style="color:green;">올때메로나</h2>
+</body>
+    
+<script>
+    document.getElementById('hello').innerHTML = '안녕';
+    document.getElementById('hello').innerHTML = '할까안할까?';
+    document.getElementById('hello').style.color = 'yellowgreen';
+    document.getElementById('hi').innerHTML='올때바밤바';
+    document.getElementById('hi').style.color='maroon';
+    document.getElementById('hi').style.fontSize='30px';
+</script>
+
+</html>
