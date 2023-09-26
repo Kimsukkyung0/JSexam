@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="exam02.css">
 </head>
 <body>
-    <div class="alert-box">Alert BOX
+    <div class="alert-box" id="alert">Alert BOX
 
-        <button onclick="closeAlert()" id="closeBtn">닫기</button>
+        <button onclick="closet('none')" id="closeBtn">닫기</button>
     </div>
     <button onclick="onClick()" id="openBtn">버튼</button>
 </body>
 
 <script>
     const onClick = function(){
-        const alertBox = document.querySelector(".alert-box");
+        const alertBox = document.querySelector(".alert-box"); 
+        //클래스이름 선택 )
         alertBox.classList.add("show-alert-box");
 
     }
-
-    const closeAlert = function(){
-        const alertBox = document.querySelector(".alert-box");
-        alertBox.classList.remove("show-alert-box");
-        console.log("닫기")
+    
+    function closet(param){
+        document.getElementById('alert').style.display = param;
+        //id를 준 요소를 아이디로 선택 하고 바로 체이닝?기법과같은 형태로 속성변환.
     }
+ 
+
+    // const closeAlert = function(){
+    //     const alertBox = document.querySelector(".alert-box");
+    //     alertBox.classList.remove("show-alert-box");
+    //     console.log("닫기")
+    // }
 
     document.querySelector('#openBtn').addEventListener('click',onClick);
     document.querySelector('#closeBtn').addEventListener('click',closeAlert);
