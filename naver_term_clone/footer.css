@@ -1,32 +1,4 @@
-header{
-    min-height: 54px;
-    background-color :#1EC800;
-    position: relative;
+footer{
+    background-color: grey;
+    height : 70px ;
 }
-.center-container{
-    display: flex;
-    justify-content:center;
-}
-#main-logo{
-  width: 50px;
-  object-fit: cover;
-  margin-left: 10%;
-
-  /* margin-left: 5px ; */
-  /* margin-right: 10px; */
-  /* border: 1in;
-  border-color: darkcyan; */
-  /* position: absol */
-  /* justify-content:flex-start; */
-}
-#service-nm{
-   color: white;
-   font-size: 20px;
-   font-weight:normal;
-    padding-left: 10%;
-   /* justify-content:flex-end; */
-}
-#login-button{
-    justify-content: right;
-}
-/* 헤더:relative 자식 요소들한테는 앱솔루트 줘서 위치를 잡아준다 */
