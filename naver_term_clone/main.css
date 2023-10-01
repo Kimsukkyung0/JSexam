@@ -1,21 +1,27 @@
 main{
     background-color: white;
     position: relative;
+    display: grid;
+    display: grid;margin-left: 23%;  margin-right: 23%;
 }
-
+#term-title{
+    justify-items: left;
+    font-size: 22px;
+}
 .text-area{
-    justify-items: center;
-    
+    min-height: 700px;
+    display: grid;
+    grid-row: 30%;
+    gap:40px;
 }
 
 #main-term{
-   margin-left: 20%;
-   margin-right: 20%;
+   position: absolute;
 }
 
 .language-dropdown{
     position: relative;
-    display: inline-block;
+    display: none;
   }
 
 .language-content{
