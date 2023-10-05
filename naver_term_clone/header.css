@@ -1,62 +1,46 @@
 header{
-    min-height: 4rem;
-    display: grid;
-    grid-template-columns: 3fr;
+    height: 3rem;
     background-color :#1EC800;
     position: relative;
-    border:dashed black;
-    min-width: 80vw;
-    max-height:5vw;
+    border-bottom: 0.05rem rgb(21, 167, 33) solid;
+    /* border: white dashed; */
 }
 .header-container{
-   
-    display: grid;
-    grid-template-columns: 3fr;
-    /* grid-template-columns: 35% 55% 10% 10%; */
-    /* justify-content:space-between; */
-    object-fit: cover;
-    /* align-items: stretch; */
-    display: grid;
-    /* margin-left: 10vw;  
-    margin-right: 10vw;     */
     position: absolute;
-    border:dashed black;
-}
-
-#first-header-container{
+    object-fit: cover;
     display: grid;
-    grid-template-columns: 15% 60%;
-    gap: 10px ;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    
+    grid-template-columns: 70px 120px 35vw 120px 50px;
+    margin-inline-start: 23%;
+    margin-top: 8px;
+    /* min-width: 53%; */
 }
+
 #main-logo{
-  width: 55px;
-  position: absolute;
-  /* justify-content: flex-start; */
-}
+    width: 55px;
+    margin-top: 10px;
+  }  
+#service-nm{
+    margin-top: 1%;
+    color: white;
+    font-size: 1.3rem;
+    font-weight:bold;
+ }
 
-#last-header-container{
-
-}
 #login-button{
-    font-size: 10px;
-    font-weight:normal;
+    margin-right: 25px;
+    background-color: #1EC800;
+    font-style:normal;
+    font-size: 0.7rem; 
+    border:rgb(21, 167, 33)  0.02rem solid;
+    color:white;
+    border-radius: 2px;
+}
+#last-header-container{
+    border-left: rgb(21, 167, 33) solid 0.02rem;
+    border-right: rgb(21, 167, 33) solid 0.02rem;
 }
 #bento-white-menu{
-    margin-top: 5%;
+    margin-top: 15%;
     margin-bottom: 3%;
-    width: 20px;
-  /* justify-content: flex-start; */
+    width: 1rem;
 }
-
-#service-nm{
-   color: white;
-   font-size: 22px;
-   font-weight:normal;
-}
-/* #login-button{
-    /* justify-content: flex-end; */
-
-/* 헤더:relative 자식 요소들한테는 앱솔루트 줘서 위치를 잡아준다 */
