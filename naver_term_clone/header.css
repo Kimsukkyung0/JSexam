@@ -1,16 +1,26 @@
 header{
-    min-height: 54px;
+    min-height: 4rem;
+    display: grid;
+    grid-template-columns: 3fr;
     background-color :#1EC800;
     position: relative;
+    border:dashed black;
+    min-width: 80vw;
+    max-height:5vw;
 }
 .header-container{
-    
+   
     display: grid;
-    grid-template-columns: 35% 55% 10% 10%;
-    justify-content:space-between;
+    grid-template-columns: 3fr;
+    /* grid-template-columns: 35% 55% 10% 10%; */
+    /* justify-content:space-between; */
     object-fit: cover;
-    align-items: stretch;
-    display: grid;margin-left: 23%;  margin-right: 23%;    
+    /* align-items: stretch; */
+    display: grid;
+    /* margin-left: 10vw;  
+    margin-right: 10vw;     */
+    position: absolute;
+    border:dashed black;
 }
 
 #first-header-container{
@@ -19,6 +29,7 @@ header{
     gap: 10px ;
     margin-top: 5%;
     margin-bottom: 3%;
+    
 }
 #main-logo{
   width: 55px;
@@ -27,12 +38,11 @@ header{
 }
 
 #last-header-container{
-    margin-top: 5%;
-    margin-bottom: 3%;
+
 }
 #login-button{
-    margin-top: 10%;
-    margin-bottom: 3%;
+    font-size: 10px;
+    font-weight:normal;
 }
 #bento-white-menu{
     margin-top: 5%;
@@ -40,12 +50,11 @@ header{
     width: 20px;
   /* justify-content: flex-start; */
 }
+
 #service-nm{
    color: white;
-   font-size: 20px;
+   font-size: 22px;
    font-weight:normal;
-    /* padding-left: 10%; */
-   /* justify-content:flex-end; */
 }
 /* #login-button{
     /* justify-content: flex-end; */
