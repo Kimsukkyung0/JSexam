@@ -9,7 +9,7 @@ main{
     font-size: 22px;
 }
 .text-area{
-    min-height: 700px;
+    min-height: 200vh;
     display: grid;
     grid-row: 30%;
     gap:40px;
