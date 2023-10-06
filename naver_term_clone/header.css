@@ -9,8 +9,9 @@ header{
     position: absolute;
     object-fit: cover;
     display: grid;
-    grid-template-columns: 70px 120px 35vw 120px 50px;
-    margin-inline-start: 23%;
+    grid-template-columns: 70px 120px 38vw 100px 4rem;
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
     margin-top: 8px;
     /* min-width: 53%; */
 }
@@ -44,3 +45,9 @@ header{
     margin-bottom: 3%;
     width: 1rem;
 }
+
+
+/* #login-button{
+    /* justify-content: flex-end; */
+
+/* 헤더:relative 자식 요소들한테는 앱솔루트 줘서 위치를 잡아준다 */
