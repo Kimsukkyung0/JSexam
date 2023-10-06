@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이용약관</title>
+    <link href="logo.png" rel="shortcut icon" type="image/x-icon">
     <link href="common.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -37,30 +38,43 @@
 
             <div class="title-container">
             <h1 id="term-title">네이버 약관 및 개인정보 보호</h1>
-        
+                    
                 <div class="language-dropdown">
-                    <div id="language-content">
-                      <li>한국어</li>
-                    </div>
-                      
-                  </div>
+                  <ul>
+                    <li>
+                        <p id="showinglan">한국어(Korean)</p>
+                    </li>
+                  <li>
+                    <a class="language-content"> 한국어(Korean)</a>
+                  </li>
+                  <li>
+                    <a class="language-content" onclick="showMenu(this.innerText)">영어(English)</a>
+                  </li>
+                  <li>
+                    <a class="language-content" onclick="showMenu(this.innerText)">일본어(Japanese)</a>
+                  </li>
+                </ul>
+                 </div>
+
                 </div>
 
                   <div class="types-term">
-                      <li itemid="1">이용약관</li>
-                      <li>개인정보처리방침</li>
-                      <li>청소년보호정책</li>
-                      <li>스팸메일정책</li>
-                      <li>책임의 한계와 법적고지</li>
-                      <li>검색결과 수집에 대한 정책</li>
-                      <li>정보보호 인증</li>                      
+                    
+                      <a class="sub-termtype">이용약관</a>
+                      <a class="sub-termtype">개인정보처리방침</a>
+                      <a class="sub-termtype">청소년보호정책</a>
+                      <a class="sub-termtype">스팸메일정책</a>
+                      <a class="sub-termtype">책임의 한계와 법적고지</a>
+                      <a class="sub-termtype">검색결과 수집에 대한 정책</a>
+                      <a class="sub-termtype">정보보호 인증</a>                      
                   </div>
 
-                  <div class="sub-terms">
-                    <li>네이버 이용약관</li>
-                    <li>네이버 유료서비스 이용약관</li>
-                    <li>네이버 위치기반서비스 이용약관</li>
-                    <li>네이버 운영정책</li>
+                  <div class="sub-terms-container">
+                    <li class="sub-terms">네이버 이용약관</li>
+                    <li class="sub-terms">네이버 유료서비스 이용약관</li>
+                    <li class="sub-terms">네이버 위치기반서비스 이용약관</li>
+                    <li class="sub-terms">네이버 운영정책</li>
+                    <li id="prev-term">이전 이용약관보기</li>
                   </div>
                   <p>네이버 및 네이버관련 제반 서비스의 이용과 관련하여 필요한 사항을 규정합니다.</p>
              
