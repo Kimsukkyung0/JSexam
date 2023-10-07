@@ -5,57 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이용약관</title>
     <link href="logo.png" rel="shortcut icon" type="image/x-icon">
-    <link href="common.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <link href="header.css" rel="stylesheet" type="text/css">
-
         <div class="header-container">
+        <div class="header-component">
             <a href="https://www.naver.com/" >
-                <img src="naverlogo_white.png" 
-                        type="image/png" alt="Naverlogo-white" id="main-logo">
+                <img src="images/naver_logo_white.png" type="image/png" alt="Naverlogo-white" id="main-logo">
             </a>
-            <h2 id="service-nm">네이버 정책</h2>
-            <p></p>
-
-            
-            <button id="login-button">
-                        로그인
-            </button> 
-
-            <p id="last-header-container">
-            <a href="https://www.naver.com/" >
-              <img src="bento-white.png" type="image/png" alt="bento-white" id="bento-white-menu">
-            </a>
-            </p>
+            <h2 id="service-nm">네이버 정책</h2>      
+           
         </div>
-    
+
+        <div class="header-component">
+          <button id="login-button">
+            로그인
+          </button> 
+          <p id="last-header-container">
+          <a href="https://www.naver.com/" >
+            <img src="images/bento-white.png" type="image/png" alt="bento-white" id="bento-white-menu">
+          </a>
+          </p>
+        </div>
+      </div>
     </header>
 
     <main>
-        <link href="main.css" rel="stylesheet" type="text/css">
-
-            <div class="title-container">
+      <div class="title-container">
             <h1 id="term-title">네이버 약관 및 개인정보 보호</h1>
                     
-                <div class="language-dropdown">
-                  <ul>
-                    <li>
-                        <p id="showinglan">한국어(Korean)</p>
-                    </li>
-                  <li>
-                    <a class="language-content"> 한국어(Korean)</a>
-                  </li>
-                  <li>
-                    <a class="language-content" onclick="showMenu(this.innerText)">영어(English)</a>
-                  </li>
-                  <li>
-                    <a class="language-content" onclick="showMenu(this.innerText)">일본어(Japanese)</a>
-                  </li>
-                </ul>
+                <!-- <div class="language-dropdown">
+                  <a href="#">한국어(Korean)</a>
+                    <ul class="language-content">
+                      <li><a href="#">한국어(Korean)</a></li>
+                      <li><a href="#">한국어(Korean)</a></li>
+                      <li><a href="#">한국어(Korean)</a></li>
+                    </ul> -->
                  </div>
-
                 </div>
 
                   <div class="types-term">
@@ -92,7 +79,6 @@
 
     <footer>
         하단부
-        <link href="footer.css" rel="stylesheet" ftype="text/css">
     </footer>
 </body>
 </html>
