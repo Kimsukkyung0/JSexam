@@ -1,20 +1,28 @@
 header{
     height: 3rem;
     background-color :#1EC800;
-    position: relative;
+    /* position: fixed; */
     border-bottom: 0.05rem rgb(21, 167, 33) solid;
-    /* border: white dashed; */
+    display: flex;
+    justify-content: space-between;
+    
 }
 .header-container{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
-    display: grid;
-    grid-template-columns: 70px 120px 38vw 100px 4rem;
-    margin-inline-start: 20%;
-    margin-inline-end: 20%;
-    margin-top: 8px;
+    border: black solid 1px;
+    /* margin-top: 8px; */
     /* min-width: 53%; */
 }
+.header-component{
+    align-items: flex-end;
+    border: black solid 1px;
+}
+
 
 #main-logo{
     width: 55px;
@@ -28,6 +36,7 @@ header{
  }
 
 #login-button{
+    display: block;
     margin-right: 25px;
     background-color: #1EC800;
     font-style:normal;
