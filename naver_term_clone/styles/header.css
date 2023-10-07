@@ -1,39 +1,43 @@
 header{
     height: 3rem;
     background-color :#1EC800;
-    /* position: fixed; */
     border-bottom: 0.05rem rgb(21, 167, 33) solid;
-    display: flex;
-    justify-content: space-between;
-    
-}
+    }
 .header-container{
-    /* position: absolute; */
     display: flex;
-    width: 80%;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 50%;
+    height:100%;
     justify-content: center;
-    align-items: center;
     object-fit: cover;
-    border: black solid 1px;
-    /* margin-top: 8px; */
-    /* min-width: 53%; */
 }
-.header-component{
-    align-items: flex-end;
-    border: black solid 1px;
+.header-container .header-component{
+    /* flex-flow: row wrap;
+    /* flex-direction: column; */
+    border: red dashed 1px; 
 }
 
-
-#main-logo{
+.header-container #main-logo{
+    
     width: 55px;
-    margin-top: 10px;
+    border: purple dashed 1px;
   }  
-#service-nm{
+.header-container #service-nm{
+    
     margin-top: 1%;
     color: white;
     font-size: 1.3rem;
     font-weight:bold;
+    border: purple dashed 1px;
  }
+
+ #last-header-container{
+    border-left: rgb(21, 167, 33) solid 0.02rem;
+    border-right: rgb(21, 167, 33) solid 0.02rem;
+}
 
 #login-button{
     display: block;
@@ -45,11 +49,9 @@ header{
     color:white;
     border-radius: 2px;
 }
-#last-header-container{
-    border-left: rgb(21, 167, 33) solid 0.02rem;
-    border-right: rgb(21, 167, 33) solid 0.02rem;
-}
+
 #bento-white-menu{
+    
     margin-top: 15%;
     margin-bottom: 3%;
     width: 1rem;
