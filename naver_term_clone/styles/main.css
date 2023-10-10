@@ -13,7 +13,6 @@ main{
     margin-top: 2rem;
     border-bottom: grey solid 2px;
     align-items: center;
-
 }
 #term-title{
     font-size: 22px;
@@ -89,12 +88,13 @@ main{
 }
 .sub-termtype{
     border: rgb(201, 201, 201) 0.03rem solid;
-    border-collapse: collapse;
-    font-size: 0.8rem;
+    font-size: 1rem;
     height: auto;
-    width:auto;
-    padding : 1rem; 
-   text-align: center;
+    width: auto;
+    padding : 1rem 1rem; 
+    margin:0.5rem;    
+    text-align: center;
+    align-items: center;
 }
 
 .sub-terms-container{
