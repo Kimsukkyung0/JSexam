@@ -2,45 +2,44 @@ header{
     height: 3rem;
     background-color :#1EC800;
     border-bottom: 1px rgb(21, 167, 33) solid;
-    width: 1150px;
+    width: 100%;
     }
+
 .header-container{
     display: flex;
     justify-content:space-between;
     flex-wrap: nowrap;
-    gap: 885px;
+    gap:670px;
     height:100%;
+    margin: 0 auto;
     justify-content: center;
     object-fit: cover;
+    place-items: center;
 }
 .header-container .header-component{
-    /* flex-flow: row wrap;
-    /* flex-direction: column; */
     display: inline-flex;
-    border: red dashed 1px; 
 }
 
 .header-container #main-logo{
     width: 55px;
-    vertical-align:middle;
-    border: purple dashed 1px;
+    margin-right: 0.5rem;
 }  
 .header-container #service-nm{
-    /* margin-top: 1%; */
+    margin : auto 0;
     color: white;
     font-size: 22px;
     font-weight:bold;
-    border: purple dashed 1px;
 }
 
 #last-header-container{
+    padding: 0.9rem;
     border-left: rgb(21, 167, 33) solid 0.02rem;
     border-right: rgb(21, 167, 33) solid 0.02rem;
 }
 
 #login-button{
     display: block;
-    margin-right: 25px;
+    margin: auto 10px;
     background-color: #1EC800;
     font-style:normal;
     font-size: 0.7rem; 
@@ -50,10 +49,8 @@ header{
 }
 
 #bento-white-menu{
-    
-    margin-top: 15%;
-    margin-bottom: 3%;
     width: 1rem;
+    margin: auto 0;
 }
 
 
