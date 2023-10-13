@@ -1,4 +1,31 @@
 footer{
-    background-color: grey;
-    height : 70px ;
+    height : 88px ;
+    width: 960px;
+    font-size: 12px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+footer .div-line{
+    border-top: 1px solid rgb(201, 201, 201);
+    width: 100%;   
+  
+  }
+
+footer .footer-term-list {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    letter-spacing: -1px;
+    
+}
+.footer-term-list li{
+    display: inline;
+    position: relative;
+    padding: 0 5px 0 7px;
+    font-size: 11px;
+    white-space: nowrap;
 }
