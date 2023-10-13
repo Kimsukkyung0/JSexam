@@ -1,11 +1,14 @@
 footer{
     height : 88px ;
-    width: 960px;
+    width: 100%;
     font-size: 12px;
-    margin: 0 auto;
+ 
+}
+footer .footer-container{ 
+    width: 960px;
+      margin: 0 auto;
     justify-items: center;
 }
-
 footer .div-line{
     border-top: 1px solid rgb(201, 201, 201);
     width: 100%;   
@@ -28,4 +31,10 @@ footer .footer-term-list {
     padding: 0 5px 0 7px;
     font-size: 11px;
     white-space: nowrap;
+}
+
+#logo-copyright{
+    margin: auto ;
+
+    display: block;
 }
