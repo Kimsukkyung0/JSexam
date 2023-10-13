@@ -109,7 +109,7 @@ border: none;
 }
 
 .index{
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .index .index-info li{
@@ -117,6 +117,42 @@ border: none;
   margin: 12px 0;
   color: #01c73c;
 }
+
 #printing-term{
   float: right;
 }
+.section-v1 *{
+  font-size: 13px;
+  line-height: 1.6rem;
+  margin-bottom: 21px;
+  color: rgb(90, 90, 90);
+}
+.section-v1 .h3sub{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section-v1 .h3sub :last-child{
+  margin-bottom: 40px;
+}
+
+.section-v1 ul li{
+  list-style:disc;
+  margin-left: 40px;
+}
+
+.section-v1 .inform-date li{
+  margin-bottom: 0px;
+}
+
+.section-v1 .highlight-term{
+  color:#01c73c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.section-v1 .term-color-green{
+  color:#01c73c;
+  text-decoration: none;
+}
+
