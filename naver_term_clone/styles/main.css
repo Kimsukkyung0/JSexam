@@ -6,7 +6,7 @@ main{
     
 }	  
 	
-.title-container{
+main .title-container{
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
@@ -15,18 +15,18 @@ main{
   width: 100%;  
 }
 
-#term-title{
+main #term-title{
   font-size: 22px;
   font-weight:bolder; 
   letter-spacing: -3px;
   
 }
-.language-dropdown {
+main .language-dropdown {
   width: 8rem;
   list-style: none;
   justify-content: flex-end;
 }
-.language-dropdown ul{
+main .language-dropdown ul{
   float:right;
 }
 .language-content{
@@ -116,6 +116,10 @@ border: none;
   font-weight: bold;
   margin: 12px 0;
   color: #01c73c;
+}
+
+main .index p{
+  margin-top: 30px ;
 }
 
 #printing-term{
