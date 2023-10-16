@@ -1,5 +1,32 @@
 main{
     width: 100%;
-    background-color: green;
+    background-color: beige;
     min-height: 900px;
 }
+
+main .slide-container{
+    height : 800px;
+    background: blue;
+    width: 100%;
+}
+
+.btn_prev{
+    background: url(img/sprite.png) -296px 99px no-repeat;
+    width:46px;
+    height:46px;
+    position:absolute;
+    left: 85px;
+    bottom: 198px;
+}
+
+.btn_next{
+    background: url(img/sprite.png) -346px -99px no-repeat;
+    width:46px;
+    height:46px;
+    position:absolute;
+    right:85px;
+    bottom: 198px;
+}
+
+
+
