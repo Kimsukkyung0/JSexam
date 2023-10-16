@@ -19,24 +19,80 @@ header .header-wrap{
 }
 header .header-wrap .header_logo{
     background: url(img/header_logo.png) no-repeat;
-    width:86px;
-    height:22px;
+    width:87px;
+    height:17px;
+    float: left;
+    margin : 30px 0 0 30px;
 }
 
 header .header-wrap nav{
     display: inline-block;
+    width: 760px;
+    height: 100%;
 }
 
 header .header-wrap nav .gnb_menu{
-    width: 756px;
-    height:100%;
-    
+    width: 100%;
 }
 
 header .header-wrap nav .gnb_menu .gnb_menu_list{
     float: left;
+    padding-inline-start: 40px;
+    padding :29px 0 30px;
+    height:100%;
+    margin: 0 30px;   
+}
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_menu_item{
+    font-size: 15px;  
+    text-decoration: none;
+    color: #555;
+    position:relative;
+    font-weight: bold;
+
+}
+header .header-wrap .header_util{
+    float: right;    
+}
+header .header-wrap .header_util .header_util_lang{
+    float:left;
+    margin: 0 auto;
+    padding-inline-start: 40px;
+    padding :29px 0 30px;
+    
+}
+header .header-wrap .header_util .header_util_lang a{
+    font-size: 14px;    
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
 }
 
-/* header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_menu_item
+header .header-wrap .header_util .header_util_lang :first-child{
+    border-right : gray solid 2px;
+    padding-inline-end: 0.5em;
+}
+header .header-wrap .header_util .sitemap_box{
+    float:right;
+    margin: 0 auto;    
+    padding-inline-start: 40px;
+    padding :29px 30px 30px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+}
 
- */
+
+header .header-wrap .header_util .sitemap_box .btn_sitemap .btn_line{
+    height: 2px;
+    width: 100%;
+    display:block;
+    /* position:absolute; */
+    background-color: #333;
+
+}
+
+
