@@ -5,15 +5,15 @@ main{
 }
 
 main .slide-container{
-    height : 800px;
+    height : 850px;
     background: blue;
     width: 100%;
 }
 
 .btn_prev{
-    background: url(img/sprite.png) -296px 99px no-repeat;
-    width:46px;
-    height:46px;
+    background: url(img/sprite.png) -296px -99px no-repeat;
+    width:50px;
+    height:50px;
     position:absolute;
     left: 85px;
     bottom: 198px;
@@ -21,8 +21,8 @@ main .slide-container{
 
 .btn_next{
     background: url(img/sprite.png) -346px -99px no-repeat;
-    width:46px;
-    height:46px;
+    width:50px;
+    height:50px;
     position:absolute;
     right:85px;
     bottom: 198px;
