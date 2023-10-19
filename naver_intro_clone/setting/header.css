@@ -25,6 +25,8 @@ header .header-wrap .header_logo{
     margin : 30px 0 0 30px;
 }
 
+/* NAV시작 */
+
 header .header-wrap nav{
     display: inline-block;
     width: 760px;
@@ -48,8 +50,43 @@ header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_menu_item{
     color: #555;
     position:relative;
     font-weight: bold;
-
 }
+
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap{
+    min-width: 1100px;
+    background-color: #1ec545;
+    height: 367px;
+    top:80px;
+    left:0;
+    right:0;
+    z-index: 999;
+    position: absolute;
+    
+}
+
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap li{
+    display: inline-block;
+    width: 760px;
+    /* height: 100%; */
+    border: black solid 1px;
+    
+    
+}
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap .gnb_dropMenu {
+    float: left;
+    margin: 0 auto;
+    
+}
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap .gnb_dropMenu_item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    
+}
+
+
+/* UTILS */
+
 header .header-wrap .header_util{
     float: right;    
 }
@@ -76,13 +113,13 @@ header .header-wrap .header_util .sitemap_box{
     margin: 0 auto;    
     padding-inline-start: 40px;
     padding :29px 30px 30px;
-    letter-spacing: normal;
+    /* letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
     text-align: center;
-    cursor: default;
+    cursor: default; */
 }
 
 
@@ -94,5 +131,4 @@ header .header-wrap .header_util .sitemap_box .btn_sitemap .btn_line{
     background-color: #333;
 
 }
-
 
