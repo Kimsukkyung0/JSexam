@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="setting/favicon.ico">
     <link href="setting/style.css" rel="stylesheet" type="text/css">
-    <script src="header.js"></script>
-    <script src="main.js"></script>
+    <script src="header.js" crossorigin="anonymous"></script>
+    <script src="main.js" crossorigin="anonymous"></script>
     <title>NAVER</title>
 </head>
 <body>
@@ -19,17 +19,17 @@
                 </a>
             </h1>
             <nav>
-                <ul class="gnb_menu" role="menu">
-                    <li class="gnb_menu_list" role="menuitem">
+                <ul class="gnb_menu" role="menu" aria-haspopup="true">
+                    <li class="gnb_menu_list" role="menuitem" aria-expanded="false">
                         <a href="" aria-expanded="false" class="gnb_menu_item">
                             네이버
                         </a>
-                        <!-- <ul class="gnb_dropMenu_wrap" style="display: none;">
+                        <ul class="gnb_dropMenu_wrap" style="display: none;">
                             <li>naver</li>
                             <li>네이버 소개</li>
                             <li>1784소개</li>
                             <li>주요연혁</li>
-                        </ul> -->
+                        </ul>
                     </li>
                     <li class="gnb_menu_list" role="menuitem">
                         <a href="" aria-expanded="false" class="gnb_menu_item">
@@ -63,6 +63,7 @@
                     </li>
                 </ul>
             </nav>
+
             <div class="header_util">
                 <div class="header_util_lang">
                     <a href="/" aria-selected="true">KOR</a>
