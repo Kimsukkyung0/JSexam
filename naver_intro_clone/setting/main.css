@@ -10,7 +10,7 @@ main .slide-container{
     width: 100%;
 }
 
-.btn_prev{
+.btn_prev a {
     background: url(img/sprite.png) -296px -99px no-repeat;
     width:50px;
     height:50px;
@@ -19,7 +19,7 @@ main .slide-container{
     bottom: 198px;
 }
 
-.btn_next{
+.btn_next a{
     background: url(img/sprite.png) -346px -99px no-repeat;
     width:50px;
     height:50px;
