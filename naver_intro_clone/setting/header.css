@@ -63,6 +63,7 @@ header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap{
     height: 367px;
     top:80px;
     left:0;
+
     right:0;
     /* z-index: 999; */
     position: absolute;    
@@ -109,14 +110,12 @@ header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap .gnb_dropMen
 
 }
 .all_service_btn{
-    background: url(img/sprite.png) -97px -18px no-repeat;
+    background: url(img/sprite.png) -81px 0px no-repeat;
     width:18px;
     height:18px;
     position: absolute;
-    z-index: 999;
     right: 70px;
     top: 61px;
-    background-position: -81px 0;
     
 
 }
