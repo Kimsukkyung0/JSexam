@@ -1,8 +1,9 @@
 header{
     width:100%;
-    background-color: grey;
+    /* background-color: grey; */
     height: 80px;
     position: fixed;
+    background-color: aliceblue;
 }
 
 .blind{
@@ -59,31 +60,39 @@ header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap{
     top:80px;
     left:0;
     right:0;
-    z-index: 999;
-    position: absolute;
-    
+    /* z-index: 999; */
+    position: absolute;    
 }
 
-header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap li{
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap >li{
+    width: 190px;
+    /* align-items: center; */
+    height: 100%;
+    /* border: black dashed 1px; */
+    vertical-align: top;
     display: inline-block;
-    width: 760px;
-    /* height: 100%; */
-    border: black solid 1px;
-    
-    
+    position: relative;
+   /* border-inline-start: whitesmoke 0.3px solid; */
+    border-inline-end: whitesmoke 0.3px solid;
 }
+
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap >li:first-child{
+   border-inline-start: whitesmoke 0.3px solid;
+}
+
 header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap .gnb_dropMenu {
-    float: left;
-    margin: 0 auto;
-    
+    text-align: left;
+
 }
 header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap .gnb_dropMenu_item {
     text-decoration: none;
     color: #fff;
     font-weight: lighter;
-    
+    margin-left: 28px;
 }
-
+header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap .gnb_dropMenu_item strong:first-child {
+    font-weight: bold;
+}
 
 /* UTILS */
 
