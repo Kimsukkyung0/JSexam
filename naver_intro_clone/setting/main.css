@@ -4,29 +4,58 @@ main{
     min-height: 900px;
 }
 
-main .slide-container{
+main .slide_container{
     height : 850px;
-    background: blue;
+    background: url(img/img_main_slide12.jpg);
     width: 100%;
 }
 
-.btn_prev a {
+main .slide_container .slide-content-components .btn_prev a {
     background: url(img/sprite.png) -296px -99px no-repeat;
     width:50px;
     height:50px;
     position:absolute;
     left: 85px;
-    bottom: 198px;
+    bottom: 280px;
 }
 
-.btn_next a{
+main .slide_container .slide-content-components .btn_next a{
     background: url(img/sprite.png) -346px -99px no-repeat;
     width:50px;
     height:50px;
     position:absolute;
     right:85px;
-    bottom: 198px;
+    bottom: 280px;
 }
+
+main .slide_container .slide_content_text .ctnt_title{
+    position: absolute;
+    font-size: 35px;
+    left :210px;
+    bottom: 350px;
+    color:white;
+    
+}
+
+main .slide_container .slide_content_text .slide_text_ctnt{
+    position: absolute;
+    font-size: 20px;
+    left :210px;
+    bottom: 280px;
+    color:white;
+    font-size: 16px;
+}
+
+main .slide_container .slide_content_text .slide_text_ctnt2{
+    position: absolute;
+    font-size: 20px;
+    left :210px;
+    bottom: 255px;
+    color:white;
+    font-size: 16px;
+}
+
+
 
 
 
