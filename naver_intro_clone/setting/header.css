@@ -63,10 +63,13 @@ header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap{
     height: 367px;
     top:80px;
     left:0;
-
     right:0;
-    /* z-index: 999; */
     position: absolute;    
+    display: none;
+}
+
+header .header-wrap nav .gnb_menu .gnb_menu_list:hover .gnb_dropMenu_wrap {
+    display: block;
 }
 
 header .header-wrap nav .gnb_menu .gnb_menu_list .gnb_dropMenu_wrap >li{
