@@ -50,24 +50,25 @@ main .slide_container .slide_content_text .slide_text_ctnt{
 
 /* 컨텐츠 영역 */
 main .slide_ctnt_container{
+    width: 11000px;
+    height: 100%;
+    
+}
+
+main .slide_ctnt_container .slide_ctnt_list{
     width:100%;
-    display: relative;
+    display: flex;
+    flex-wrap:nowrap;
     height : 750px;
     /* overflow: hidden; */
 }
 
-main .slide_ctnt_container .slide_ctnt_list{
-    float: left;
-    width: 13000px;
-    height: 100%;
-}
-
-main .slide_ctnt_container .slide_ctnt_list .slide_ctnt{
+main .slide_ctnt_container .slide_ctnt_list .slide_ctnt {
     float: left;
     /* display: inline-block; */
     width:100%;
     height:750px;
-    margin:0;
+    transition: left 0.15s;
 }
 
 
