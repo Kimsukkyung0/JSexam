@@ -10,5 +10,7 @@ js 를 사용하지 않은 html/css만으로 이루어진 결과물입니다.<br
 <br>
 <h1>2.네이버 소개페이지</h1>
 (작업중)
+<img src="https://github.com/Kimsukkyung0/JSexam/assets/129349523/41b667a9-f597-4a26-aae8-88ff99fc4856">
+JS슬라이드 구현중
 
 - 클론대상 url : https://www.navercorp.com/
