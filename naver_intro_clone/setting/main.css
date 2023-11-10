@@ -50,15 +50,16 @@ main .slide_container .slide_content_text .slide_text_ctnt{
 
 /* 컨텐츠 영역 */
 main .slide_ctnt_container{
-      width:100%;
-    display: flex;
-    flex-wrap:nowrap;
-    height : 750px;
+    height: 100%;
+    /* overflow: hidden; */
 }
 
 main .slide_ctnt_container .slide_ctnt_list{
-    height: 100%;
-    overflow: hidden;
+    
+    width:100%;
+    display: flex;
+    flex-wrap:nowrap;
+    height : 750px;
 }
 
 main .slide_ctnt_container .slide_ctnt_list .slide_ctnt {
