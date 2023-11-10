@@ -35,19 +35,25 @@ const paginationItems = document.querySelectorAll(".slide_pagination > li");
 //list 아이템즈가 정확히 주가됐는지 확인가넝.
 console.log(paginationItems);
 //무한슬라이드를 위해 start/end 슬라이드 복사
+ //슬라이드 아이템 collection내부의 첫번째 아이템.
 const startSlide = slideItems[0];
 const endSlide = slideItems[slideItems.length-1];
 
-//복사================================================================
-
 const startElem = document.createElement("div");
-const endElem = document.createElement("div");
+const endElem = document.createElement("div");//가상의 div요소 생성
 
 endSlide.classList.forEach((c) => endElem.classList.add(c));
 endElem.innerHTML = endSlide.innerHTML;
 
+
 startSlide.classList.forEach((c) => startElem.classList.add(c));
 startElem.innerHTML = startSlide.innerHTML;
+
+
+//복사================================================================
+
+
+
 
 // 각 복제한 엘리먼트 추가하기
 slideItems[0].before(endElem);
