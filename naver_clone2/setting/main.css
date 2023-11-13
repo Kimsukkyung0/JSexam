@@ -104,4 +104,40 @@ main .platform_dscr .pf_script .pf_title{
     font-weight: bolder;
     line-height: 5rem;
 }
+main .platform_dscr{
+    float: left;
+    margin-bottom:120px;
+}
+
+main .platform_dscr .pf_pictograms_list{
+    width: 70%;
+    margin: 0 auto;
+    height:250px; 
+}
+main .platform_dscr .pf_pictograms_list .pf_picto_items{
+    width:25%;
+    height:100%;
+    float: left;
+    
+}
+main .platform_dscr .pf_pictograms_list li .picto_img{
+    background: url(https://www.navercorp.com/img/ko/sprite.png) 0px -955px no-repeat;
+    width: 90px;
+    height: 100px;
+    margin: 30px auto;
+}
+main .platform_dscr .pf_pictograms_list li .picto_textbox{
+    text-align: center;
+    color: grey;
+    line-height: 1.5rem;
+    margin : 0 10px;
+    font-size: 0.9rem;
+}
+
+main .platform_dscr .pf_pictograms_list li .picto_textbox .picto_item_title{
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #1ec545;
+    margin-bottom: 10px;
+}
 
