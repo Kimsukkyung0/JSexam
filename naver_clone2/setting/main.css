@@ -20,23 +20,58 @@ main .content{
     width: 100%;
 }
 main .content .content_wrap{
-    width:90%;
+    width:85%;
     margin: 0 auto;
 }
 
 main .content .content_wrap ul{
     display: flex;
     width:100%;
-    border: red 1px solid;
+    height: 800px;
     flex-wrap:wrap;
-    overflow: hidden;
 }
 main .content .content_wrap ul li{
-    border: blue 1px solid;
-    width:30%;    
-    /* height:400px; */
+    width:33%; 
+    height: 50%; 
 }
-main .content .content_wrap ul li img{
-    height:300px;
-    
+main .content .content_wrap ul li .content_img{
+    width:100%;     
+    height:100%;    
+    display: relative;
+}
+
+main .content .content_wrap ul li .content_img .text-box{
+    margin-left: 20px;
+    height:100%;
+    display: absolute;
+    overflow: hidden;
+    top: 0;
+}
+
+main .content .content_wrap ul li .text-box .content_icon{
+    background: url(https://www.navercorp.com/img/ko/sprite.png) -198px -128px no-repeat;
+    width: 27px;
+    height: 27px;
+}
+
+main .content .content_wrap ul li img:hover{
+    opacity: 0.3;
+    transition-duration: 0.5s;
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translate3d(0,100px,0);
+    }
+    to{
+        opacity: 1;
+        transform: tramslateZ(100px);
+    }
+}
+main .content .content_wrap ul li .content_img:hover .text-box{
+    /* transform : translate(-50%, -50%); */
+
+    display: block;
+    animation: fadeInUp 1s;
 }
