@@ -1,18 +1,42 @@
 footer{
     width:100%;
     height:150px;
-    background: black;
-    position: relative;
-    transform: translateY(0%);
-    /* position: absolute; */
-    /* bottom:0; */
+    background:rgb(240, 240, 240);
+    position: absolute;
+    top:2650px;
+    /* 강제로 값을 줄 수밖에없었음.ㅠㅠ */
 }
 footer .ft_wrap{
-    width:90%;
+    width:80%;
     height:100%;
-    background: red;
+    border: solid 1px red;
     margin:0 auto;
-
-
+    position:relative;
     /* transform : translateY(-100%); */
+  
+}
+
+footer .ft_wrap .ft_left{
+    width: 30%;
+    border: solid 1px purple;
+    height: 100%;
+}
+
+footer .ft_wrap .ft_left ul li{
+    float:left;
+}
+
+footer .ft_wrap .ft_left .naver_bk_logo{
+    background: url(img/sprite.png) 0px -1260px;
+    width: 92px;
+    height: 30px;
+}
+
+footer .ft_wrap .ft_center{
+    background: url(img/footer_copyright.png) 30% 100% no-repeat;
+
+}
+footer .ft_wrap .ft_right{
+    width: 30%;
+    border: solid 1px orange;
 }
