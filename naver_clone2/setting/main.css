@@ -1,27 +1,28 @@
 main{
     width: 100%;
-    height:400%;
+    height: 1500px;
 }
 
 main .slide_wrap{
     width: 100%;
     height:700px;
+   
 }
 
 main .slide_wrap .slide_main{
     width: 100%;
     height:100%;
-    position : inline-block;
+    display: flex;
+    
+    /* overflow: hidden; */
 }
 main .slide_wrap .slide_main .slide_1{
     width: 100%;
-    height:100%;
     background: url(https://www.navercorp.com/img/ko/main/img_main_slide11.jpg);
 }
 
 main .slide_wrap .slide_main .slide_2{
     width: 100%;
-    height:100%;
     background: url(https://www.navercorp.com/img/ko/main/img_main_slide10.jpg);
 }
 
@@ -85,6 +86,7 @@ main .content .content_wrap ul li .content_img{
     height:100%;    
     position: relative;
     background:url(https://www.navercorp.com/img/ko/main/img_main_content13.png);
+    overflow: hidden;
 }
 
 main .content .content_wrap ul li .content_img:hover::before{
@@ -144,6 +146,7 @@ main .content .content_wrap ul li:hover .text-box{
 /* 플랫폼설명 시작 */
 main .platform_dscr{
     width: 100%;
+    height:700px;
     display: block;
 }
 
