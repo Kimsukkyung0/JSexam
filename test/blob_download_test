@@ -19,24 +19,50 @@
         handleImageDownload(filename,targetUrl)
     }
 
-    const handleImageDownload = async(filename ,url)=>{
-        try{
-            //데이터를 블롭타입으로 받기...,
-            const response = await axios.get(url);
-            //blob객체를 생성함(이미지 데이터를 갖고있음.)
-            const blob = new blob(response.data);
-            console.log("blob : "+ blob);
-            //blobURL을 만드는 과정 (브라우저에서 blob데이터를 가리킬 수 있는 고유한 url)
-            const blobURL = URL.createObjectURL(blob);
-            
-            const link = document.createElement("a");
-            
-            link.href = blobURL;
-            link.download = filename;
-            link.click();            
-        } catch(error){
-            console.log("다운로드실패",error)
-        }
+    const handleImageDownload = (filename, url) => {
+    try {
+        var xhr = new XMLHttpRequest();
+        xhr.responseType = 'blob'; // Set the response type to 'blob'
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                const blob = new Blob([xhr.response]); // Create a blob from the response
+                const blobURL = URL.createObjectURL(blob);
+
+                const link = document.createElement("a");
+
+                link.href = blobURL;
+                link.download = filename;
+                link.click();
+            } else {
+                console.error("Request failed with status: " + xhr.status);
+            }
+        };
+
+        xhr.open('GET', url);
+        xhr.send();
+    } catch (error) {
+        console.error("다운로드 실패", error);
     }
+};
+    // const handleImageDownload = async(filename ,url)=>{
+    //     try{
+    //         //데이터를 블롭타입으로 받기...,
+    //         const response = await axios.get(url);
+    //         //blob객체를 생성함(이미지 데이터를 갖고있음.)
+    //         const blob = new blob(response.data);
+    //         console.log("blob : "+ blob);
+    //         //blobURL을 만드는 과정 (브라우저에서 blob데이터를 가리킬 수 있는 고유한 url)
+    //         const blobURL = URL.createObjectURL(blob);
+            
+    //         const link = document.createElement("a");
+            
+    //         link.href = blobURL;
+    //         link.download = filename;
+    //         link.click();            
+    //     } catch(error){
+    //         console.log("다운로드실패",error)
+    //     }
+    // }
 </script>
 <!-- https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=app:eventgift:100042,002,10239 -->
