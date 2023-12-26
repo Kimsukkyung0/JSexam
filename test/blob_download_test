@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="blob_test" onclick="">블롭테스트</button>
+    <div id="qr_container">
+        <a id="downTag" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=app:eventgift:100042,002,10239" download="qr_test"><button class="btn small normal" id="btnXdownQr" type="button">다운로드</button></a></div>
+</body>
+</html>
+<script>
+    var sendingData4Blobk = function(){
+        let targetUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=app:eventgift:100042,002,10239";
+        let filename = "fileNm" + new Date();
+        handleImageDownload(filename,targetUrl)
+    }
+
+    const handleImageDownload = async(filename ,url)=>{
+        try{
+            //데이터를 블롭타입으로 받기...,
+            const response = await axios.get(url);
+            //blob객체를 생성함(이미지 데이터를 갖고있음.)
+            const blob = new blob(response.data);
+            //blobURL을 만드는 과정 (브라우저에서 blob데이터를 가리킬 수 있는 고유한 url)
+            const blobURL = URL.createObjectURL(blob);
+            
+            const link = document.createElement("a");
+            
+            link.href = blobURL;
+            link.download = filename;
+            link.click();            
+        } catch(error){
+            console.log("다운로드실패",error)
+        }
+    }
+</script>
+<!-- https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=app:eventgift:100042,002,10239 -->
