@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="blob_test" onclick="">블롭테스트</button>
+    <button id="blob_test" onclick="sendingData4Blob()">블롭테스트</button>
     <div id="qr_container">
         <a id="downTag" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=app:eventgift:100042,002,10239" download="qr_test"><button class="btn small normal" id="btnXdownQr" type="button">다운로드</button></a></div>
 </body>
 </html>
 <script>
-    var sendingData4Blobk = function(){
+    var sendingData4Blob = function(){
         let targetUrl = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=app:eventgift:100042,002,10239";
         let filename = "fileNm" + new Date();
+        console.log("data : " + targetUrl, filename)
         handleImageDownload(filename,targetUrl)
     }
 
@@ -24,6 +25,7 @@
             const response = await axios.get(url);
             //blob객체를 생성함(이미지 데이터를 갖고있음.)
             const blob = new blob(response.data);
+            console.log("blob : "+ blob);
             //blobURL을 만드는 과정 (브라우저에서 blob데이터를 가리킬 수 있는 고유한 url)
             const blobURL = URL.createObjectURL(blob);
             
