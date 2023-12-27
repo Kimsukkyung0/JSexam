@@ -28,7 +28,10 @@
             if (xhr.status === 200) {
                 const blob = new Blob([xhr.response]); // Create a blob from the response
                 const blobURL = URL.createObjectURL(blob);
-
+                console.log("blob.type : "+blob.type);
+                blob.type = 'image/jpg';
+                console.log("blob.type : "+blob.type);
+                console.log("blobURL : " + blobURL)
                 const link = document.createElement("a");
 
                 link.href = blobURL;
