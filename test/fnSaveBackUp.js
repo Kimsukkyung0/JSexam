@@ -1,6 +1,5 @@
  $.fnSave = function () {
         let tmp;
-        let rtnMsg = "";
         if (listData4Reg.size === 0) {
             alert("변경된 내용이 없습니다");
             return false;
@@ -41,15 +40,16 @@
             }
 
 
+            if ($.gfnConfirmSave()) {
+                let promises = [];
 
-                if ($.gfnConfirmSave()) {
-
-                    for (let key of listData4Reg.keys()) {
-                        let tmp = listData4Reg.get(key);
-                        let url;
-                        let objParam = "";
-                        let evtOrgParam = "";
-                        let evtGiftParam = "";
+                let resultMsg = "";
+                for (let key of listData4Reg.keys()) {
+                    let tmp = listData4Reg.get(key);
+                    let url;
+                    let objParam = "";
+                    let evtOrgParam = "";
+                    let evtGiftParam = "";
 
 
                     //ins, upd 공통데이터 생성
@@ -102,19 +102,25 @@
                         alert("수정불가능한 자료 포함")
                         //R 혹은 D
                     }
-                    $.callAjax(url, null, objParam, null, null, function (data) {
-                        if (data.RESULT_MAP.RTN === "N" && rtnMsg==="") {
-                            rtnMsg = data.RESULT_MAP.MSG;
-                            console.log("rtnMsg : ",rtnMsg)
-                        } else {
-                            if (data.RESULT_MAP.ERR_CD === "SUCCESS"&& rtnMsg==="") {
-                                rtnMsg = data.RESULT_MAP.ERR_MSG;
-                                // console.log("rtnMsg for문안에서 : ",rtnMsg)
-                                $.fnSearch()
+                    let promise = new Promise(resolve => {
+                        $.callAjax(url, null, objParam, null, null, function (data) {
+                            if (data.RESULT_MAP.RTN === "N" && resultMsg === "") {
+                                resultMsg += data.RESULT_MAP.MSG;
+                            } else {
+                                if (data.RESULT_MAP.ERR_CD === "SUCCESS" && resultMsg === "") {
+                                    resultMsg += data.RESULT_MAP.ERR_MSG;
+                                    $.fnSearch()
+                                }
                             }
-                        }
+                            resolve();
+                        });
                     });
+                    promises.push(promise);
                 }
+                Promise.all(promises).then(() => {
+                    console.log("resultMsg : ", resultMsg);
+                    alert(resultMsg)
+                })
             }
         }
     }
