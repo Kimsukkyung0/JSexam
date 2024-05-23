@@ -46,6 +46,10 @@ header{
     display: flex;
     justify-content:space-between;
     padding: var(--padding);
+    background:var(black);
+    color:var(--grey-light-color);
+    text-transform: capitalize;
+    font-weight: bold;
 }
 header .logo{
     font-size:var(--font-large);
@@ -57,8 +61,9 @@ header .logo .logo{
     align-items: center;
 }
 
-header .icons .fa-search{
+header .icons .fa-search,.fa-ellipsis-v{
     margin-right: var(--padding);
+    color:var(--grey-light-color)
 }
 
 /* video Player */
@@ -94,15 +99,15 @@ body > .info{
 
 .info .metadata .titleAndButton .title{
     font-size:var(--font-medium);
-    display: -webkit-box;
+    margin-right:var(--padding)
 
 }
 
-.info .metadata .titleAndButton .title .clamp{
+.info .metadata .titleAndButton .title.clamp{
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    margin-right:var(--padding);
 }
 
 .info .metadata .titmeAndButton .moreBtn{
@@ -110,8 +115,8 @@ body > .info{
     transition:transfrom 300ms ease-in-out
 }
 
-.info .metadata .titmeAndButton .moreBtn.clicked{
-    transform:rotate(180deg)
+.info .metadata .titleAndButton .moreBtn.clicked{
+    transform : rotate(180deg)
 }
 
 .info .metadata .views{
